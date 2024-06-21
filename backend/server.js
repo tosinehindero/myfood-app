@@ -1,10 +1,13 @@
 require('dotenv').config();
 const express = require('express');
+const connectDB = required('./config/database.js')
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const cors = require('cors');
 
 const app = express();
+
+connectDB();
 
 //Middleware
 app.use(cors());
