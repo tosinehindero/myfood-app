@@ -10,6 +10,12 @@ const app = express();
 connectDB();
 
 //Middleware
+const corsOptions = {
+  origin: "http://127.0.0.1:5173", // Or your frontend's origin
+  credentials: true, // To allow cookies and authentication headers
+};
+
+
 app.use(cors());
 app.use(express.json());
 app.use(mongoSanitize());
