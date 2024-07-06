@@ -1,2 +1,36 @@
-node_modules
+# Node.js (Backend)
+node_modules/
+.env
+*.log
+logs/
+tmp/
+temp/
+dist/
+build/
+.DS_Store
+Thumbs.db
+coverage/
+
+# React (Frontend)
 frontend/node_modules
+frontend/build/
+frontend/.cache/
+frontend/.env
+frontend/coverage/
+
+# Docker
+.dockerignore
+docker-compose.yml
+Dockerfile
+
+# OS-specific Files
+.DS_Store
+Thumbs.db
+
+# Editor-specific Files
+.vscode/
+.idea/
+
+# Coverage Reports
+coverage/
+frontend/coverage/

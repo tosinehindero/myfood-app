@@ -38,5 +38,5 @@ app.use((err, req, res, next) => {
 });
 
   
-const port = process.env.port || 30001
+const port = process.env.port || 5000
 app.listen(port, ()=>{console.log('Hello Server is running')});
